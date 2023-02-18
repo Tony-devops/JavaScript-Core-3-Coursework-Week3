@@ -70,3 +70,12 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function gryffindor(array){
+  let filter = array.filter(object=> object.house ==='Gryffindor');
+  filter.map(member => {
+    let {firstName, lastName} = member;
+    console.log(`${firstName} ${lastName}`)
+  });
+}
+gryffindor(hogwarts);
